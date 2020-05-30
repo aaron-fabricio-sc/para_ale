@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ale</title><link rel="stylesheet" href="css/boton.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="card">
+            <button class="face front" id="front">
+                <h2>presioname</h2>
+            </button>
+            <button class="face back" id="back">
+                <h2>ALE <br>eres muy <br> linda</h2>
+                
+            </button>
+        </div>
+        <button class="boton" id="boton">GIRAR</button>
+    </div>
+    <script>
+        let front = document.getElementById('front')
+        let back = document.getElementById('back')
+        let btn = document.getElementById('boton')
+
+        front.addEventListener('click', girar);
+        btn.addEventListener('click', desaparecer)
+
+        function girar(){
+           btn.classList.add('volver')
+        }
+
+        function desaparecer(){
+            btn.classList.remove('volver')
+        }
+    </script>
+</body>
+</html>
